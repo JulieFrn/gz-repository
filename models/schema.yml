@@ -58,5 +58,20 @@ models:
             description : the costs related to logistic
             tests : 
             - not_null 
+
+    - name : int_campaign
+      description: gathered all campaigns and costs per date
+      columns:
+          - name: campaign_name 
+            description : the identifier of the campaign
+            tests : 
+            - not_null
+          - name: campaign_key
+            description: the key of the campaign
+            tests:
+            - not_null
+          
+
+            
         
                 
